@@ -1,8 +1,14 @@
-<label>Titolo</label>
-<input #titolo type="text" placeholder="titolo articolo">
-<label>link</label>
-<input #link type="text" placeholder="link del articolo">
-<button (click)="manda(link,titolo)">manda</button>
+<div class="mb-3 container">
+  <div class="mb-3">
+  <label class="form-label">Titolo</label>
+  <input class="form-control" #titolo type="text" placeholder="titolo articolo">
+  </div>
+  <div class="mb-3">
+  <label class="form-label">link</label>
+  <input class="form-control" #link type="text" placeholder="link del articolo">
+  <button class="btn btn-primary mb-3" (click)="manda(link,titolo)">manda</button>
+  </div>
+</div>
 <br><br><br>
 @for(x of art; track x){
   <app-articoli [art]="x"></app-articoli>
