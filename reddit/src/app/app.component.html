@@ -1,8 +1,8 @@
-<lable>Titolo</lable>
+<label>Titolo</label>
 <input #titolo type="text" placeholder="titolo articolo">
-<lable>link</lable>
+<label>link</label>
 <input #link type="text" placeholder="link del articolo">
 <button (click)="manda(link,titolo)">manda</button>
-@for(x of articoli; track x){
-  <app-articoli [articoli]="x"></app-articoli>
+@for(x of art; track x){
+  <app-articoli [art]="x"></app-articoli>
 }
