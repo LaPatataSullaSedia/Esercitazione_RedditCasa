@@ -2,3 +2,7 @@
 <input #titolo type="text" placeholder="titolo articolo">
 <lable>link</lable>
 <input #link type="text" placeholder="link del articolo">
+<button (click)="manda(link,titolo)">manda</button>
+@for(x of articoli; track x){
+  <app-articoli [articoli]="x"></app-articoli>
+}
