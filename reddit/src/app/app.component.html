@@ -3,6 +3,8 @@
 <label>link</label>
 <input #link type="text" placeholder="link del articolo">
 <button (click)="manda(link,titolo)">manda</button>
+<br><br><br>
 @for(x of art; track x){
   <app-articoli [art]="x"></app-articoli>
+  <br>
 }

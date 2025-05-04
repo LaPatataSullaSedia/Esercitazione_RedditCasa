@@ -16,7 +16,7 @@ export class AppComponent {
 
   manda(titolo : HTMLInputElement, link: HTMLInputElement) : boolean
   {
-    this.art.push(new articoli(titolo.value, link.value))
+    this.art.push(new articoli(titolo.value, link.value , 0))
     return false
   }
 
